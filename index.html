@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
   <body>
     <section class="showcase">
+      <div > <input type="text" placeholder="tim kiem dia chi" onchange = "onChange(event)"> <button onclick = "onClickButton(event)">tim kiem</button></div>
       <div class="container grid">
         <div class="info-day">
           <!-- <p class="hello"></p> -->
@@ -17,8 +18,8 @@
           <p class="hour"></p> <!--time display-->
           <h1 class="status"></h1> <!--status of weather-->
           <!-- <img class="dow" src="/icons/color/clear_day.svg" alt="" /> display of weather -->
-          <p class="temperature"></p>
-          <h3 class="location">Soc Son, Ha Noi</h3>
+          <p class="temperature" id="temperatureID"></p>
+          <h3 class="location" id = "locationName">Soc Son, Ha Noi</h3>
           <p class="quotes">&ldquo;Cuộc sống là một chuỗi bài học mà bạn phải sống mới hiểu được.&rdquo; - Helen Keller</p>
         </div>
         <div class="info-days flex">

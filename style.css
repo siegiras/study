@@ -28,15 +28,17 @@ body {
 }
 
 .showcase {
+  align-items: center;
   height: 100vh;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: column;
   display: flex;
   background-image: linear-gradient(
       to right,
       rgba(69, 75, 84, 0.7),
       rgba(77, 82, 90, 0.8)
     ),
-    url(/designs/background3.jpg);
+    url("./designs/background3.jpg");
 }
 
 .container {
@@ -49,7 +51,7 @@ body {
       rgba(195, 207, 277, 0.1),
       rgba(133, 164, 214, 0.15)
     ),
-    url(/designs/background6.jpg);
+    url("./designs/background6.jpg");
   background-size: cover;
   background-position: center;
   /* opacity: 0.9; */
@@ -153,4 +155,9 @@ body {
 
 .days:nth-child(odd) {
   color: black;
+}
+
+.input {
+  font-size: 16px;
+  width: 300px;
 }
